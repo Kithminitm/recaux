@@ -95,7 +95,7 @@ exports.profileimgup = (req, ress, next) => {
             console.log(path.extname(req.file.originalname));
             var imgexte = path.extname(req.file.originalname);
             cloudinary.uploader.upload(
-              "/home/dealwithit/Documents/dev/recaux/assets/avatar/" +
+              "D:\\Software Project\\recaux\\assets\\avatar\\" +
                 req.params.id +
                 imgexte,
               {
@@ -171,7 +171,7 @@ exports.cvupload = (req, ress,next) => {
             console.log(path.extname(req.file.originalname));
             var cvexte = path.extname(req.file.originalname);
             cloudinary.uploader.upload(
-              "/home/dealwithit/Documents/dev/recaux/assets/cv/" +
+              "D:\\Software Project\\recaux\\assets\\cv\\" +
                 req.params.id +
                 cvexte,
               {
